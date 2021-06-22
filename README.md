@@ -1,0 +1,1 @@
+# full-qrscanne-r-reader-database
