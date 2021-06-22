@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">QR Scanner And Generator</string>
+    <string name="generate">Generate</string>
+    <string name="save">Save</string>
+    <string name="share">Share</string>
+    <string name="copy">Copy</string>
+    <string name="result_data">Result Data</string>
+    <string name="value_required">Value Required</string>
+</resources>

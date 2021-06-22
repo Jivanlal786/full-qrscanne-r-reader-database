@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_light"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/result_edit_text"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/result_data"
+            android:maxHeight="250dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/generate_barcode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:layout_weight="1"
+            android:text="@string/generate" />
+
+        <Button
+            android:id="@+id/save_barcode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2.5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="2.5dp"
+            android:layout_weight="1"
+            android:text="@string/save" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/copy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginEnd="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:layout_weight="1"
+            android:text="@string/copy" />
+
+        <Button
+            android:id="@+id/share"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2.5dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="2.5dp"
+            android:layout_weight="1"
+            android:text="@string/share" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_insert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginEnd="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:layout_weight="1"
+            android:text="Insert" />
+
+        <Button
+            android:id="@+id/btn_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginEnd="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:layout_weight="1"
+            android:text="list Activity" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/qr_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name" />
+
+</LinearLayout>
+
